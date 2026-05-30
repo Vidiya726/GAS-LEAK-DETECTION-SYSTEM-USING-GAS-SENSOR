@@ -20,6 +20,76 @@ The Arduino Uno can be powered via a USB connection or an external power supply.
 The board is programmable using the Arduino IDE (Integrated Development Environment), which supports a simplified version of C/C++. The code, known as a "sketch," is uploaded to the board via a USB connection. The Uno has a USB-B port, which is used for communication with a computer. The USB connection also powers the board when connected. The board includes a reset button that restarts the microcontroller, useful during programming and troubleshooting. The In-Circuit Serial Programming (ICSP) header allows for low-level programming of the microcontroller or firmware updates. The Uno has a built-in LED on pin 13, commonly used for simple tests and debugging.
 
 ## Procedure:
+### Step 1: Set Up the Tinkercad Environment
+
+1. **Log in to Tinkercad**
+   - Open Tinkercad in your web browser.
+   - Log in to your account.
+
+2. **Create a New Circuit**
+   - In the Tinkercad dashboard, click **Circuits**.
+   - Select **Create New Circuit**.
+
+### Step 2: Add Components to the Circuit
+
+1. **Arduino Uno**
+   - Drag an Arduino Uno board from the components panel onto the workspace.
+
+2. **Gas Sensor**
+   - Search for the MQ-2 Gas Sensor in the components panel.
+   - Drag it into the workspace.
+
+3. **Breadboard**
+   - Drag a small breadboard into the workspace to help with wiring connections.
+
+4. **Resistor (Optional)**
+   - A resistor may not be necessary for this simple setup.
+   - You may include one for more accurate readings.
+
+5. **Wires**
+   - Use wires to connect the components.
+
+### Step 3: Connect the MQ-2 Gas Sensor to Arduino
+
+#### MQ-2 Pin Connections
+
+- **VCC** → Arduino **5V**
+- **GND** → Arduino **GND**
+- **A0 (Analog Output)** → Arduino **A0**
+- **D0 (Digital Output - Optional)** → Arduino **D2**
+
+#### Breadboard Wiring
+
+- Connect the **VCC** pin of the MQ-2 sensor to the breadboard's 5V rail connected to Arduino 5V.
+- Connect the **GND** pin of the MQ-2 sensor to the breadboard's ground rail connected to Arduino GND.
+- Connect the **A0** pin of the MQ-2 sensor to Arduino analog pin **A0**.
+- Optionally connect the **D0** pin of the MQ-2 sensor to Arduino digital pin **D2** for threshold detection.
+
+### Step 4: Write the Arduino Code
+
+1. Click the **Code** button at the top of the Tinkercad workspace.
+
+2. Ensure the editor is in **Text Mode**.
+
+3. Enter the Arduino code for the MQ-2 gas sensor.
+
+### Step 5: Simulate the Circuit
+
+1. Click **Start Simulation** to run the circuit and code.
+
+2. Open the **Serial Monitor** to view the gas sensor readings.
+
+### Step 6: Troubleshoot and Refine
+
+1. Verify that all wiring connections are correct.
+
+2. Modify the code if necessary to improve accuracy or change the output format.
+
+### Step 7: Save Your Work
+
+1. Click **Stop Simulation** to end the simulation.
+
+2. Click **Save** to store the circuit design and code for future use.
 
 ## Program:
 ```
